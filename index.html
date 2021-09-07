@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <title>المجلس الاقتصادي الأعلى</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Preload -->
+    <link rel="preload" crossorigin as="image" href="images/favicon.png" type="image/png">
+    <link rel="preload" crossorigin as="image" href="images/logo.png" type="image/png">
+    <link rel="preload" crossorigin as="image" href="images/logo-wh.png" type="image/png">
+    <link rel="preload" crossorigin as="style" href="css/bootstrap-rtl.min.css">
+    <link rel="preload" crossorigin as="script" href="js/jquery-3.6.0.min.js">
+    <link rel="preload" crossorigin as="script" href="js/bootstrap.bundle-rtl.min.js">
+    <link rel="preload" crossorigin as="script" href="js/fontawesome.js">
+    <link rel="preload" crossorigin as="script" href="js/main.js">
+
+    <meta name="description" content="وصف مختصر للموقع.">
+    <meta name="thumbnail" content="images/logo.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:card" content="summary"> -->
+    <meta property="og:url" content="index.html">
+    <meta property="og:title" content="المجلس الاقتصادي الأعلى">
+    <meta property="og:description" content="وصف مختصر للموقع.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <!-- <link rel="stylesheet" href="css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="css/flickity.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm py-4 sticky-top">
+        <div class="container flex-wrap flex-lg-nowrap">
+            <a class="navbar-brand mr-auto" href="index.html"><img src="images/logo-wh.png"
+                    alt="المجلس الاقتصادي الأعلى"></a>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse mr-2 order-sm-3 order-lg-0 justify-content-center" id="menu">
+                <!-- شريط القائمة الرئيسية - النافبار -->
+                <ul class="navbar-nav px-0 py-3 py-sm-0 mt-sm-3 mt-lg-0 ml-lg-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home pr-1"></i><span>الرئيسية</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="menu-1" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <span>عن المجلس</span><i class="fas fa-angle-down px-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menu-1">
+                            <li class="nav-item dropdown-item">
+                                <a class="nav-link" href="blog-list.html"><span>اجتماعات</span></a>
+                            </li>
+                            <li class="nav-item dropdown-item">
+                                <a class="nav-link" href="blog-list.html"><span>قرارات</span></a>
+                            </li>
+                            <li class="nav-item dropdown-item">
+                                <a class="nav-link" href="blog-list.html"><span>بيانات</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog-list.html"><span>اقتصاديات</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog-list.html" id="menu-3"><span>الأخبار</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html" id="menu-4"><span>تواصل معنا</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-flex social">
+                <!-- أيقونات التواصل الاجتماعي -->
+                <a href="#" target="_blank" title="إنستغرام"><i class="fab fa-instagram icon"></i></a>
+                <a href="#" target="_blank" title="تويتر"><i class="fab fa-twitter icon"></i></a>
+                <a href="#" target="_blank" title="فيس بوك"><i class="fab fa-facebook-f icon"></i></a>
+                <a href="#" target="_blank" title="RSS"><i class="fas fa-rss icon"></i></a>
+            </div>
+
+            <div class="dropdown lang">
+                <!-- أيقونة تغيير اللغة -->
+                <a id="choiceLang" type="button" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span>عربي</span><i class="fas fa-angle-down px-1"></i>
+                </a>
+                <div class="dropdown-menu p-0 text-center" aria-labelledby="choiceLang">
+                    <a class="dropdown-item" href="#"><span>العربية</span></a>
+                    <a class="dropdown-item" href="#"><span>English</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <a id="backToTop" title="إلى الأعلى" href="#"><span class="fa fa-angle-up"></span></a>
+
+    <main>
+        <div class="box-fluid p-0">
+            <!-- قسم السلايدر الرئيسي -->
+            <section>
+                <div id="primSlider" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row mx-0">
+                                <div class="col-12 col-lg-6 p-0 carousel-img">
+                                    <img class="d-block w-100 lazyload" data-src="images/img1-720.jpg" alt="...">
+                                </div>
+                                <div
+                                    class="col-12 col-lg-4 d-flex flex-column my-auto pl-xl-5 py-lg-3 carousel-content">
+                                    <h5><a href="post.html" class="text-white font-weight-bolder">
+                                            كيف يمكن تجاوز التداعيات الاقتصادية لوباء كورونا؟</a></h5>
+                                    <p class="text-white d-none d-lg-block">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                        مولد النص العربي،
+                                        حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص.
+                                    </p>
+                                </div>
+                                <div class="post-category text-white small">
+                                    <a class="text-white" href="blog-list.html">اجتماعات المجلس</a> &nbsp;
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row mx-0">
+                                <div class="col-12 col-lg-6 p-0 carousel-img">
+                                    <img class="d-block w-100 lazyload" data-src="images/img2-720.jpg" alt="...">
+                                </div>
+                                <div
+                                    class="col-12 col-lg-4 d-flex flex-column my-auto pl-xl-5 py-lg-3 carousel-content">
+                                    <h5><a href="post.html" class="text-white font-weight-bolder">
+                                            تعريف علم الاقتصاد وفروعه الرئيسية والثانوية</a></h5>
+                                    <p class="text-white d-none d-lg-block">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                        مولد النص العربي،
+                                        حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص.
+                                    </p>
+                                </div>
+                                <div class="post-category text-white small">
+                                    <a class="text-white" href="blog-list.html">اقتصاديات</a> &nbsp;
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row mx-0">
+                                <div class="col-12 col-lg-6 p-0 carousel-img">
+                                    <img class="d-block w-100 lazyload" data-src="images/img3-720.jpg" alt="...">
+                                </div>
+                                <div
+                                    class="col-12 col-lg-4 d-flex flex-column my-auto pl-xl-5 py-lg-3 carousel-content">
+                                    <h5><a href="post.html" class="text-white font-weight-bolder">
+                                            الزيادات المتتالية في أسعار المحروقات</a></h5>
+                                    <p class="text-white d-none d-lg-block">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                        مولد النص العربي،
+                                        حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص.
+                                    </p>
+                                </div>
+                                <div class="post-category text-white small">
+                                    <a class="text-white" href="blog-list.html">بيانات المجلس</a> &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#primSlider" data-slide-to="0"></li>
+                        <li data-target="#primSlider" data-slide-to="1"></li>
+                        <li data-target="#primSlider" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <!-- مساحة إعلانية -->
+            <section class="p-0">
+                <a href="#"><img class="w-100 lazyload" data-src="images/benner.jpg" alt="عنوان الإعلان"></a>
+            </section>
+
+            <!-- قسم سلايدر الأخبار -->
+            <section>
+                <h4><a href="blog-list.html">آخر الأخبار</a></h4>
+                <div id="box1">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="row no-gutters">
+                                    <div class="col-xl-6 col-lg-4 col-md-6 cardImg">
+                                        <img class="w-100 lazyload" data-src="images/img1-720.jpg" alt="...">
+                                        <span type="button" class="icon"><i class="far fa-image"></i></span>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-8 col-md-6 card-body">
+                                        <h5 class="card-title"><a href="post.html">كيف يمكن تجاوز التداعيات الاقتصادية
+                                                لوباء كورونا؟</a></h5>
+                                        <p class="card-text">
+                                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربي.
+                                        </p>
+                                        <a href="post.html" class="read-more"><small>اقرأ المزيد</small></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="row no-gutters">
+                                    <div class="col-xl-6 col-lg-4 col-md-6 cardImg">
+                                        <img class="w-100 lazyload" data-src="images/img2-720.jpg" alt="...">
+                                        <span type="button" class="icon"><i class="far fa-image"></i></span>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-8 col-md-6 card-body">
+                                        <h5 class="card-title"><a href="post.html">تعريف علم الاقتصاد وفروعه الرئيسية
+                                                والثانوية</a></h5>
+                                        <p class="card-text">
+                                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربي.
+                                        </p>
+                                        <a href="post.html" class="read-more"><small>اقرأ المزيد</small></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="row no-gutters">
+                                    <div class="col-xl-6 col-lg-4 col-md-6 cardImg">
+                                        <img class="w-100 lazyload" data-src="images/img3-720.jpg" alt="...">
+                                        <span type="button" class="icon"><i class="far fa-image"></i></span>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-8 col-md-6 card-body">
+                                        <h5 class="card-title"><a href="post.html">الزيادات المتتالية في أسعار
+                                                المحروقات</a></h5>
+                                        <p class="card-text">
+                                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربي.
+                                        </p>
+                                        <a href="post.html" class="read-more"><small>اقرأ المزيد</small></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="row no-gutters">
+                                    <div class="col-xl-6 col-lg-4 col-md-6 cardImg">
+                                        <img class="w-100 lazyload" data-src="images/img4-720.jpg" alt="...">
+                                        <span type="button" class="icon"><i class="far fa-image"></i></span>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-8 col-md-6 card-body">
+                                        <h5 class="card-title"><a href="post.html">هشاشة النمو الاقتصادي</a></h5>
+                                        <p class="card-text">
+                                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                            مولد النص العربي.
+                                        </p>
+                                        <a href="post.html" class="read-more"><small>اقرأ المزيد</small></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mb-2">
+                        <a class="p-2 border-bottom border-secondary" href="blog-list.html">مزيد من الأخبار</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="box-fluid">
+            <!-- قسم القرارات -->
+            <section class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <h4><a href="blog-list.html">القرارات</a></h4>
+                    </div>
+
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <div id="box2" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item py-lg-3 active">
+                                    <h5 class="text-center"><a href="post.html"
+                                            class="text-white font-weight-bolder">كيف يمكن تجاوز التداعيات الاقتصادية
+                                            لوباء كورونا؟</a></h5>
+                                    <p>
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                        مولد النص العربي،
+                                        حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص.
+                                    </p>
+                                    <div class="text-center mt-4 more">
+                                        <a class="py-1 px-2" href="post.html">المزيد</a>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item py-lg-3">
+                                    <h5 class="text-center"><a href="post.html"
+                                            class="text-white font-weight-bolder">تعريف علم الاقتصاد وفروعه الرئيسية
+                                            والثانوية</a></h5>
+                                    <p>
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                        مولد النص العربي،
+                                        حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص.
+                                    </p>
+                                    <div class="text-center mt-4 more">
+                                        <a class="py-1 px-2" href="post.html">المزيد</a>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item py-lg-3">
+                                    <h5 class="text-center"><a href="post.html"
+                                            class="text-white font-weight-bolder">الزيادات المتتالية في أسعار
+                                            المحروقات</a></h5>
+                                    <p>
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
+                                        مولد النص العربي،
+                                        حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص.
+                                    </p>
+                                    <div class="text-center mt-4 more">
+                                        <a class="py-1 px-2" href="post.html">المزيد</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ol class="carousel-indicators">
+                                <li class="active" data-target="#box2" data-slide-to="0"></li>
+                                <li data-target="#box2" data-slide-to="1"></li>
+                                <li data-target="#box2" data-slide-to="2"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="box-fluid bg-light p-0 mt-5">
+            <!-- قسم المجلس الاقتصادي الأعلى -->
+            <section id="box3">
+                <div class="bg-img"></div>
+                <div class="container d-flex flex-column">
+                    <h4><a href="blog-list.html">المجلس الاقتصادي الأعلى</a></h4>
+                    <small>معاً نحو اقتصادٍ أفضل</small>
+                    <p class="mt-4 mx-auto">
+                        مرحباً بكم في الموقع الإلكتروني للمجلس الاقتصادي الأعلى، وجهتكم الأولى للإطلاع على أحدث
+                        المستجدات والأخبار
+                        حول ممارسات المناقصات والمزايدات والمشتريات والمبيعات الحكومية.
+                    </p>
+                    <div class="text-center mt-4 more">
+                        <a class="py-1 px-2" href="post.html">المزيد</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="container">
+            <!-- شركاؤنا -->
+            <section>
+                <h4><a href="blog-list.html">شركاؤنا</a></h4>
+                <div id="box4" class="d-flex flex-wrap flex-column flex-sm-row">
+                    <a href="#" target="_blank"><img class="lazyload" data-src="images/repeat.jpg" alt="..."></a>
+                    <a href="#" target="_blank"><img class="lazyload" data-src="images/repeat.jpg" alt="..."></a>
+                    <a href="#" target="_blank"><img class="lazyload" data-src="images/repeat.jpg" alt="..."></a>
+                    <a href="#" target="_blank"><img class="lazyload" data-src="images/repeat.jpg" alt="..."></a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="box-fluid">
+        <div class="container text-white text-center">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- بوكس تواصل معنا -->
+                    <h4><span>تواصل معنا</span></h4>
+                    <form class="text-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="contactName" placeholder="اسمك (*)" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="contactEmail"
+                                placeholder="بريدك الإلكتروني (*)" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="contactMsg" rows="3" placeholder="الموضوع"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إرسال</button>
+                    </form>
+                </div>
+
+                <div class="col-lg-6 d-flex flex-column">
+                    <div class="social">
+                        <!-- أيقونات التواصل الاجتماعي -->
+                        <span>تابعنا عبر</span>
+                        <div class="d-flex justify-content-center mt-4">
+                            <a href="#" target="_blank" title="إنستغرام"><i class="fab fa-instagram icon"></i></a>
+                            <a href="#" target="_blank" title="تويتر"><i class="fab fa-twitter icon"></i></a>
+                            <a href="#" target="_blank" title="فيس بوك"><i class="fab fa-facebook-f icon"></i></a>
+                            <a href="#" target="_blank" title="RSS"><i class="fas fa-rss icon"></i></a>
+                        </div>
+                        <hr>
+                    </div>
+                    <span class="d-flex mt-auto mx-auto">جميع الحقوق محفوظة للمجلس الاقتصادي الأعلى ©</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- prefetch Fonts -->
+    <link rel="prefetch" crossorigin as="font" href="webfonts/tssoApxBaigK_hnnS-agtnqWo572.woff2" type="font/woff2">
+    <link rel="prefetch" crossorigin as="font" href="webfonts/tsstApxBaigK_hnnQ1iFo0C3.woff2" type="font/woff2">
+    <link rel="prefetch" crossorigin as="font" href="webfonts/fa-brands-400.woff2" type="font/woff2">
+    <link rel="prefetch" crossorigin as="font" href="webfonts/fa-regular-400.woff2" type="font/woff2">
+    <link rel="prefetch" crossorigin as="font" href="webfonts/fa-solid-900.woff2" type="font/woff2">
+
+    <!-- JS Files -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle-rtl.min.js"></script>
+    <script src="js/fontawesome.js" crossorigin="anonymous"></script>
+    <script src="js/lazysizes.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
